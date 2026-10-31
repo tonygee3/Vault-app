@@ -3,7 +3,7 @@ env.allowLocalModels = false;
 env.useBrowserCache = true;
 const MODEL='onnx-community/SmolLM2-135M-Instruct-ONNX-MHA';
 const $=id=>document.getElementById(id);
-const labels=['','Sweet',','Bold','Extra Sassy'];
+const labels=['','Sweet','Flirty','Bold','Extra Sassy'];
 const personalities=['','Warm, kind and affectionate.','Playfully flirty and charming.','Bold, witty and teasing.','Confident, extra sassy and mischievous.'];
 let generator=null,busy=false,chat=[],unlocked=false;
 const PIN_KEY='vault-pin-v1';
