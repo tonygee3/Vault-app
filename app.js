@@ -1,7 +1,7 @@
 import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.8.1';
 env.allowLocalModels = false;
 env.useBrowserCache = true;
-const MODEL='onnx-community/Qwen2.5-0.5B-Instruct';
+const MODEL='onnx-community/SmolLM2-135M-Instruct-ONNX-MHA';
 const $=id=>document.getElementById(id);
 const labels=['','Sweet','Flirty','Bold','Extra Sassy'];
 const personalities=['','Warm, kind and affectionate.','Playfully flirty and charming.','Bold, witty and teasing.','Confident, extra sassy and mischievous.'];
