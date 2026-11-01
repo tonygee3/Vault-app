@@ -1,4 +1,4 @@
-const CACHE='vault-shell-v3';
+const CACHE='vault-shell-v4';
 const SHELL=['./','./index.html','./style.css','./app.js','./manifest.webmanifest','./icon.svg','./icon-180.png','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(Promise.all([self.clients.claim(),caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('spicy-shell-')||k.startsWith('vault-shell-')&&k!==CACHE).map(k=>caches.delete(k))))]))});
